@@ -54,7 +54,7 @@ set(mlxc-src
     ${CMAKE_CURRENT_LIST_DIR}/mlx/c/transforms.cpp
     ${CMAKE_CURRENT_LIST_DIR}/mlx/c/transforms_impl.cpp)
 
-add_library(mlxc STATIC ${mlxc-src})
+add_library(mlxc SHARED ${mlxc-src})
 
 target_link_libraries(mlxc PRIVATE mlx)
 target_include_directories(mlxc
